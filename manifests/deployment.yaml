@@ -8,6 +8,7 @@ metadata:
   namespace: dev
 spec:
   replicas: 1
+  progressDeadlineSeconds: 600  # <-- Added to fix ProgressDeadlineExceeded
   selector:
     matchLabels:
       app.kubernetes.io/name: contoso-air
