@@ -7,6 +7,6 @@ WORKDIR /usr/src/app
 ##COPY src/web
 COPY src/web/package.json /usr/src/app
 RUN npm install
-COPY . /usr/src/app
+COPY /usr/src/app .
 
 CMD ["npm", "start"]
