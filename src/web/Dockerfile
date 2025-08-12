@@ -4,8 +4,8 @@ EXPOSE 3000
 
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-COPY src/web/package.json /usr/src/app
+COPY package.json .
 RUN npm install
-COPY . /usr/src/app
+COPY . .
 
 CMD ["npm", "start"]
