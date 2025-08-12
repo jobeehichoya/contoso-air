@@ -7,7 +7,7 @@ metadata:
     kubernetes.azure.com/generator: devhub
   namespace: dev
 spec:
-  replicas: 3
+  replicas: 1
   progressDeadlineSeconds: 600  # <-- Added to fix ProgressDeadlineExceeded
   selector:
     matchLabels:
